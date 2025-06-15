@@ -79,7 +79,7 @@ function App() {
             {/* Social icons at the bottom of the left column (for larger screens, overlaps with SocialSidebar fixed) */}
             <div className="hidden lg:flex justify-start gap-6 text-gray-400 mt-10">
               <a href="https://github.com/ryurewsss" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 text-3xl transition-colors"><i className="fab fa-github"></i></a>
-              <a href="https://linkedin.com/in/YourLinkedInProfile" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 text-3xl transition-colors"><i className="fab fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/rewsirapop/" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 text-3xl transition-colors"><i className="fab fa-linkedin"></i></a>
               {/* Add more social icons here */}
             </div>
           </div>
