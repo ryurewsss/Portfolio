@@ -1,0 +1,62 @@
+/* src/index.css */
+
+/* Core Tailwind CSS directives:
+   These MUST be at the very top of your main CSS file.
+   They are processed by PostCSS/Tailwind to inject all the base styles,
+   component styles (like preflight for resets), and utility classes. */
+@import "tailwindcss";
+@tailwind utilities;
+
+/*
+   -------------------------------------------------------------------------
+   GLOBAL STYLES & CUSTOM CSS (below Tailwind directives)
+   -------------------------------------------------------------------------
+
+   You can add any custom CSS here that cannot be achieved directly with
+   Tailwind utility classes, or if you prefer to write traditional CSS
+   for certain elements.
+
+   Avoid setting colors, fonts, or spacing directly here if they are
+   already defined in `tailwind.config.js`. Instead, use Tailwind classes
+   in your JSX/HTML or leverage Tailwind's `@apply` directive (if applicable).
+*/
+
+/* Smooth scroll behavior for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base body styles (often set on the outermost div in App.jsx using Tailwind classes) */
+body {
+  margin: 0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased; /* Improves text rendering on macOS/iOS */
+}
+
+/* Custom styles for the section heading underline (using a direct HEX color) */
+.section-heading {
+  position: relative;
+  display: inline-block; /* Allows width to shrink to content and supports ::after positioning */
+  margin-bottom: 2rem; /* Spacing below the heading */
+  /* This ensures the heading text and underline are treated as a single block */
+}
+
+.section-heading::after {
+    content: '';
+    display: block;
+    width: 100px; /* Fixed width of the underline */
+    height: 1px;
+    background-color: #64ffda; /* Direct HEX code for teal-400. This bypasses the 'theme()' function error. */
+    margin-top: 10px; /* Space between heading text and the underline */
+}
+
+/* You can define more custom CSS here if needed */
+/* For example, for a specific button style not covered by Tailwind */
+/*
+.custom-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+*/
