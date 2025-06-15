@@ -15,8 +15,8 @@ import Contact from './components/Contact.jsx';
 const Hero = ({ id }) => (
   <section id={id} className="min-h-screen flex items-center justify-center px-4 md:px-0">
     <div className="max-w-3xl text-center md:text-left">
-      <p className="text-teal-400 text-lg font-mono mb-4">Hi, my name is</p>
-      <h1 className="text-gray-100 text-5xl md:text-7xl font-bold mb-4 inline-block">Sirapop Koonsinchai.</h1>
+      <p className="text-teal-400 text-lg font-mono mb-4">Hi, my name is (Ryu)</p>
+      <h1 className="text-gray-100 text-5xl md:text-7xl font-bold mb-4 inline-block">Sirapop Koonsinchai. </h1>
       <h2 className="text-gray-400 text-4xl md:text-6xl font-bold mb-6">I build things for the web.</h2>
       <p className="text-gray-400 text-lg max-w-lg mx-auto md:mx-0">
         I'm a highly motivated Full Stack Developer with over 3 years of experience in designing and building scalable web applications. 
